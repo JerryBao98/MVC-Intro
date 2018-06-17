@@ -16,6 +16,8 @@ namespace RazorPagesMovie_2.Pages.Movies
     {
         private readonly RazorPagesMovie_2.Models.RazorPagesMovie_2Context _context;
 
+        //Notice that for functions such as OnGet or OnGetAsync, no return clause is used
+
         public IndexModel(RazorPagesMovie_2.Models.RazorPagesMovie_2Context context)
         {
             _context = context;
