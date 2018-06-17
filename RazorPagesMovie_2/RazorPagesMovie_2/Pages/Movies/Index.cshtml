@@ -1,4 +1,8 @@
-﻿@page
+﻿@page 
+@* This is used to make the file into an MVC action, meaning it can handle requests
+    It must be the first razor directive on a page*@
+
+@* This directive is used to sepficy the type of model in the razor page *@
 @model RazorPagesMovie_2.Pages.Movies.IndexModel
 
 @{
@@ -6,6 +10,7 @@
 }
 
 <h2>Index</h2>
+@* If the @ is followed by a keyword, then its a razor clause, otherwise, its c# *@
 
 <p>
     <a asp-page="Create">Create New</a>
