@@ -11,6 +11,8 @@ using RazorPagesMovie_2.Models;
 namespace RazorPagesMovie_2.Pages.Movies
 {
     public class IndexModel : PageModel
+    //indexModel, the razor page, is derived from the pageModel Class
+
     {
         private readonly RazorPagesMovie_2.Models.RazorPagesMovie_2Context _context;
 
@@ -21,6 +23,9 @@ namespace RazorPagesMovie_2.Pages.Movies
 
         public IList<Movie> Movie { get;set; }
 
+
+        // Here onGetAsync is used to get the list of all movies and display them
+        // This is used to initialize the state of the page
         public async Task OnGetAsync()
         {
             Movie = await _context.Movie.ToListAsync();
